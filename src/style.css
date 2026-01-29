@@ -683,3 +683,57 @@ body.light-mode .hero h2,
 body.light-mode .tagline {
     color: #ff6b35;
 }
+
+/* Social Media Button Container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.button-container .button {
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ff4500;
+    border: 2px solid #ff4500;
+    transition: all 0.45s;
+    padding: 0;
+    margin: 0;
+}
+
+.button-container .button:hover {
+    transform: rotate(360deg);
+    transform-origin: center center;
+    background-color: #ffff;
+    color: #2d2e32;
+}
+
+.button-container .button:hover .btn-svg {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg) brightness(103%) contrast(103%);
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Light mode adjustments for social buttons */
+body.light-mode .button-container .button {
+    background-color: #ff4500;
+    border-color: #ff4500;
+}
+
+body.light-mode .button-container .button:hover {
+    background-color: #000;
+}
+
+body.light-mode .button-container .button:hover .btn-svg {
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}

@@ -180,4 +180,10 @@ document.querySelectorAll('.feature-card, .concept-card, .highlight-item').forEa
   observer.observe(el);
 });
 
+// Update copyright year dynamically
+const yearElement = document.getElementById('current-year');
+if (yearElement) {
+  yearElement.textContent = new Date().getFullYear().toString();
+}
+
 console.log('Team Raga MV LEVTeam - Website Initialized');

@@ -754,3 +754,62 @@ body.light-mode .button-container .button:hover {
 body.light-mode .button-container .button:hover .btn-svg {
     filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
+
+/* Connect Section */
+.connect {
+    background: linear-gradient(180deg, var(--dark-bg) 0%, var(--card-bg) 100%);
+    padding: 4rem 2rem;
+}
+
+.connect-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.connect-content p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+    line-height: 1.8;
+}
+
+.connect-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.connect-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2.5rem;
+    background: var(--gradient-1);
+    color: var(--text-primary);
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 30px rgba(255, 69, 0, 0.4);
+}
+
+.connect-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 50px rgba(255, 69, 0, 0.7);
+}
+
+.connect-icon {
+    width: 24px;
+    height: 24px;
+}
+
+body.light-mode .connect {
+    background: #ffffff;
+}
+
+body.light-mode .connect-content p {
+    color: #333333;
+}

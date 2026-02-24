@@ -1,4 +1,4 @@
-# Team Raga MV LEVTeam Website
+# Team Raga MV LEVTeam Website (By Shantanu)
 
 Official website for Team Raga's Levitating Campus Mobility Vehicle project.
 
